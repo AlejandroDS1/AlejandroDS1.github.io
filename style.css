@@ -1,0 +1,248 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.2em;
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 1.6em;
+}
+h2{
+    font-size: 1.3em;
+}
+ul{
+    line-height: 2em;
+}
+
+/* Contact Page Styles */
+main.contacto{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.contact-page-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 20px;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+.form-wrapper{
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    height: fit-content;
+}
+.contacto-column{
+    width: 40%;
+}
+label.input{
+    font-weight: bold;
+}
+input, textarea{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+}button{
+     background-color: black;
+     color: white;
+     padding: 5px 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para participantes nosotros.html*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.person {
+    width: calc(25% - 20px); /* Ajuste del ancho para cuatro personas en la misma fila */
+    padding: 10px;
+    border: 2px solid #333; /* Borde de color */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Incluye el borde en el cálculo del ancho */
+    overflow: hidden; /* Oculta el contenido que se desborde */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Transición para el cambio de tamaño */
+}
+
+.person:hover {
+    border-color: blue;
+    transform: scale(1.1); /* Escala la caja al hacer hover */
+}
+
+.person img {
+    display: block; /* Asegura que la imagen sea un bloque */
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.person h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.person .description {
+    padding: 20px; /* Espacio interno para la descripción */
+    text-align: justify;
+
+}
+
+/* Header style */
+  
+header{
+    background-color: #7ec4cdfe; /* Color de fondo del encabezado */
+    width: 100%;
+    color: #fff; /* Color del texto */
+    align-items: center; /* Centrar verticalmente los elementos hijos */
+    display: flex; /* Activar el modelo de caja flexible */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la imagen del encabezado */
+header img {
+    max-width: 100px; /* Ajustar la imagen al ancho del encabezado */
+    display: block; /* Mostrar la imagen como un elemento en línea */
+    border: 0;
+}
+
+/* Estilos de los enlaces del encabezado */
+header nav {
+    display: inline-block; /* Mostrar la imagen como un elemento en línea */
+
+}
+
+header nav a {
+    color: #0454ff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espacio entre los enlaces */
+    font-size: 22px;
+}
+
+header nav a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: aliceblue;
+}
+
+/*Footer*/
+footer {
+    background-color: #7ec4cdfe; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    align-items: center; /* Centrar verticalmente los elementos hijos */
+    display: flex; /* Activar el modelo de caja flexible */
+    padding: 4px;
+}
+
+/* CSS proyecto.html*/
+.texto-proyecto p {
+    text-align: justify;
+    line-height: 2;
+    margin: 20px;
+}
+
+.texto-proyecto h3 {
+    text-align: center;
+}
+
+.texto-proyecto h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+img.derecha {
+    float: right;
+    width: 400px;
+    margin-left: 20px;
+}
+
+img.bottom {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+
+
+
+/* Index Page Styles */
+main.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* Establece un contenedor para los elementos */
+.index-page-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+/* Configura los estilos para cada columna */
+.member-wrapper, .project-column, aside {
+    border: 2px solid rgb(141, 194, 203); /* Borde de color */
+    padding: 20px;
+    text-align: justify; /* Justifica el texto */
+    overflow: hidden; /* Oculta el contenido que no cabe dentro del ancho */
+    margin: 5px; /* Espacio entre las columnas */
+}
+
+/* Configura los estilos para el member-wrapper */
+.member-wrapper {
+    width: calc(14%); /* Ajuste del ancho para tres columnas en la misma fila */
+    text-align: center;
+}
+
+.membre img {
+    display: block; /* Asegura que la imagen sea un bloque */
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilo para los elementos de la lista sin puntos */
+.member-wrapper ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el espacio interno de la lista */
+}
+
+/* Ajusta el espaciado entre los elementos de la lista */
+.member-wrapper li {
+    margin-bottom: 10px;
+}
+
+/* Configura los estilos para el aside */
+aside {
+    width: calc(24%);
+}
+
+/* Ajusta el ancho de .project-column para que ocupe más espacio */
+.project-column {
+    width: calc(48%);
+}
