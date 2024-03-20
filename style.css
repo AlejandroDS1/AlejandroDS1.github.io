@@ -12,6 +12,7 @@ h1{
 h2{
     font-size: 1.3em;
 }
+
 ul{
     line-height: 2em;
 }
@@ -28,18 +29,17 @@ main.contacto{
     justify-content: space-around;
     text-align: left;
     padding: 20px;
-    margin-right: 7%;
-    margin-left: 7%;
     margin-top: 10px;
 }
 .form-wrapper{
     border: 1px solid #ccc;
     padding: 20px;
-    width: 30%;
     height: fit-content;
 }
 .contacto-column{
-    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
 }
 label.input{
     font-weight: bold;
@@ -69,14 +69,13 @@ input, textarea{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 1em;
 }
 
 .person {
-    width: calc(25% - 20px); /* Ajuste del ancho para cuatro personas en la misma fila */
-    padding: 10px;
+    display: grid;
+    margin: 1.2em;
     border: 2px solid #333; /* Borde de color */
-    margin-bottom: 20px;
     box-sizing: border-box; /* Incluye el borde en el cálculo del ancho */
     overflow: hidden; /* Oculta el contenido que se desborde */
     transition: transform 0.3s ease, border-color 0.3s ease; /* Transición para el cambio de tamaño */
@@ -88,22 +87,20 @@ input, textarea{
 }
 
 .person img {
-    display: block; /* Asegura que la imagen sea un bloque */
-    max-width: 200px;
-    height: 200px;
+    width: 15em;
+    display: flex; /* Asegura que la imagen sea un bloque */
     border-radius: 50%;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin: 0.5em auto; /* Centra la imagen horizontalmente */
 }
 
 .person h2 {
     text-align: center;
-    margin-top: 10px;
+    font-weight: bold;
 }
 
 .person .description {
-    padding: 20px; /* Espacio interno para la descripción */
+    padding: 0.7em;
     text-align: justify;
-
 }
 
 /* Header style */
@@ -153,6 +150,11 @@ footer {
 }
 
 /* CSS proyecto.html*/
+.texto-proyecto {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
 .texto-proyecto p {
     text-align: justify;
     line-height: 2;
@@ -165,14 +167,13 @@ footer {
 
 .texto-proyecto h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     font-family:'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px rgba(126, 196, 205, 0.99);
 }
 
-img.derecha {
-    float: right;
-    width: 400px;
-    margin-left: 20px;
+.img-fluid {
+    margin-top: 20px;
 }
 
 img.bottom {
@@ -183,11 +184,14 @@ img.bottom {
     margin-bottom: 25px;
 }
 
-
-
+body.proyecto {
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #7ec4cdfe);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #7ec4cdfe);
+}
 
 /* Index Page Styles */
-main.index {
+main.index{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,8 +199,19 @@ main.index {
     text-align: center;
 }
 
+main.index h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+}
+main.index h4{
+    text-align: center;
+}
+.benvinguda{
+    padding: 15px;
+}
+
 /* Establece un contenedor para los elementos */
-.index-page-container {
+.container-fluid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -204,45 +219,29 @@ main.index {
 }
 
 /* Configura los estilos para cada columna */
-.member-wrapper, .project-column, aside {
+main.index .col-sm-2, .col-sm-6, .col-sm-3 {
     border: 2px solid rgb(141, 194, 203); /* Borde de color */
     padding: 20px;
     text-align: justify; /* Justifica el texto */
     overflow: hidden; /* Oculta el contenido que no cabe dentro del ancho */
-    margin: 5px; /* Espacio entre las columnas */
+    margin: 10px; /* Espacio entre las columnas */
 }
 
-/* Configura los estilos para el member-wrapper */
-.member-wrapper {
-    width: calc(14%); /* Ajuste del ancho para tres columnas en la misma fila */
-    text-align: center;
+.smaller-image {
+    width: 200px; /* Set initial width */
 }
-
+  
 .membre img {
-    display: block; /* Asegura que la imagen sea un bloque */
-    max-width: 200px;
-    height: 200px;
     border-radius: 50%;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 /* Estilo para los elementos de la lista sin puntos */
-.member-wrapper ul {
+main.index .col-sm-2 ul {
     list-style: none; /* Elimina los puntos de la lista */
     padding: 0; /* Elimina el espacio interno de la lista */
 }
 
 /* Ajusta el espaciado entre los elementos de la lista */
-.member-wrapper li {
+main.index .col-sm-2 li {
     margin-bottom: 10px;
-}
-
-/* Configura los estilos para el aside */
-aside {
-    width: calc(24%);
-}
-
-/* Ajusta el ancho de .project-column para que ocupe más espacio */
-.project-column {
-    width: calc(48%);
 }
